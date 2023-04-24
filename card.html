@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>tattofeell_card</title>
+  <title>tattoofeel_card</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -117,36 +117,36 @@
     </div>
   </header>
 <main class="main-container">
-  <ol class="main-container__list">
-    <li class="main-container__list-item">
-      <a href="#" class="main-container__link">
+  <ol class="breadcrumbs">
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">
         Главная
       </a>
     </li>
-    <li class="main-container__list-item">
-      <a href="#" class="main-container__link">
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">
         Каталог
       </a>
     </li>
-    <li class="main-container__list-item">
-      <a href="#" class="main-container__link">
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">
         Иглы и наконечники
       </a>
     </li>
-    <li class="main-container__list-item">
-      <a href="#" class="main-container__link">
+    <li class="breadcrumbs__item">
+      <a href="#" class="breadcrumbs__link">
         Иглы KWADRON Magnum
       </a>
     </li>
   </ol>
   <section class="catalog-item">
-    <h1 class="catalog-item__heading">
+    <h1 class="catalog-item__title title">
       Иглы KWADRON Magnum
     </h1>
-    <div class="catalog-item__article-number">
+    <div class="catalog-item__id">
       Код: intz-BW- 004-30
     </div>
-    <a class="catalog-item__brande">
+    <div class="catalog-item__brand">
       Бренд:
       <a href="#">
         Intenze
@@ -154,6 +154,7 @@
     </div>
   </section>
   <div class="catalog-item__card-wrap">
+    <!--слайдер реализовывается на vue-swiper компоненте-->
     <div class="catalog-item__main-slide">
       крупная картинка товара
     </div>
@@ -162,15 +163,246 @@
     </div>
     <div class="catalog-item__social">
       <div class="social__caption">
-        Поделиться
+        Поделитксь с друзьями
       </div>
-      /*хапуталась/
+      <div class="catalog-item__social-wrap">
+        <ul class="catalog-item__social-list">
+          <li class="social-list__item">
+            инстаграмм
+          </li>
+          <li class="social-list__item">
+            <!--взяла из гугла, все соцсети должны быть ссылками-->
+            <a href="#vk" onclick="window.open('https://vk.com/share.php?url='+ window.location.href +'')">ВКонтакте</a>
+          </li>
+          <li class="social-list__item">
+            вотсап
+          </li>
+          <li class="social-list__item">
+            телеграмм
+          </li>
+          <li class="social-list__item">
+            скопировать ссылку
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="catalog-item__product-describe">
+      <div class="catalog-item__main-information">
+        <p class="main-information__rating">
+          *****
+        </p>
+        <a href="#" class="main-information__reviews">
+          24 Отзыва
+        </a>
+        <a href="#" class="main-information__reviews-add">
+          Добавить отзыв
+        </a>
+        <p class="main-information__text">
+          Kwadron — высококачественные, точные тату иглы. Хирургическая сталь.
+          Для ровного покраса и теней.
+        </p>
+        <p class="main-information__title">
+          Объем:
+        </p>
+        <!--кнопки модификаций предлагаю сделать списком-->
+        <ul class="main-information__modification-item">
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              10 (12) M1C-2
+            </a>
+          </li>
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              120 мл
+            </a>
+          </li><li class="modification-item__item">
+          <a href="#" class="item-link">
+            10 (12) M1C-2
+          </a>
+        </li>
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              10 (12) M1C-2
+            </a>
+          </li>
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              10 (12) M1C-2
+            </a>
+          </li>
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              60 мл
+            </a>
+          </li>
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              120 мл
+            </a>
+          </li>
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              10 (12) M1C-2
+            </a>
+          </li>
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              120 мл
+            </a>
+          </li>
+          <li class="modification-item__item">
+            <a href="#" class="item-link">
+              10 (12) M1C-2
+            </a>
+          </li>
+        </ul>
+        <p class="main-information__text">
+          Наличие: нет на складе
+        </p>
+      </div>
+      <div class="main-information__price">
+
+      </div>
     </div>
 
 
   </div>
 
 </main>
+<footer class="page-footer">
+  <section class="page-footer__about">
+    <div class="">
+      <div class="page-footer__logo">
+        логотип
+      </div>
+      <h2 class="page-footer__title">
+        Интернет-магазин для мастеров
+        татуировки и татуажа в Москве.
+      </h2>
+      <p class="page-footer__social">
+        Подписывайтесь:
+        <a href="#" class="page-footer__social-link">
+          Telegram
+        </a>
+        <a href="#" class="page-footer__social-link">
+          VK
+        </a>
+      </p>
+    </div>
+    <nav class="page-footer__menu">
+      <ul class="page-footer__list">
+        <li class="page-footer__list-item">
+          <a href="#" class="page-footer__link">
+            Каталог
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#" class="page-footer__link">
+            Бренды
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#" class="page-footer__link">
+            Акции
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#" class="page-footer__link">
+            Статьи
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#" class="page-footer__link">
+            Новости
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#" class="page-footer__link">
+            Наша команда
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#" class="page-footer__link">
+            Контакты
+          </a>
+        </li>
+        <li class="page-footer__list-item">
+          <a href="#" class="page-footer__link">
+            Доставка
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <section class="page-footer__pay-information">
+    <h2 class="visually-hidden">
+      платежная информация
+    </h2>
+    <div class="page-footer__">
+      <div class="page-footer__pay">
+        <img src="#" alt="иконка платежной системы виза" class="">
+        <img src="#" alt="иконка платежгой системы мастеркарт" class="">
+        <img src="#" alt="иконка платежной системы мир" class="">
+        <nav class="page-footer__pay-menu">
+          <ul class="page-footer__pay-list">
+            <li class="page-footer__pay-item">
+              <a href="#" class="page-footer__link">
+                Оплата
+              </a>
+            </li>
+            <li class="page-footer__pay-item">
+              <a href="#" class="page-footer__link">
+                Гарантии и возврат
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-footer__contact-block">
+        <p class="page-footer__mail">
+          tattoofeel@inbox.ru
+        </p>
+        <p class="page-footer__time">
+          Пн-Вс 9:00-21:00
+        </p>
+      </div>
+    </div>
+    <div class="page-footer__text">
+      <p class="page-footer__describe">
+        Индивидуальный предприниматель Волков Иван Евгеньевич
+        Свидетельство о государственной регистрации № 321673300035122 от 4 октября 2021 года.
+        ИНН: 673111423375
+      </p>
+      <p class="page-footer__copyright">
+        © Copyright 2022 tattoofeel.ru. All Rights Reserved.
+      </p>
+    </div>
+  </section>
+  <section class="page-footer__contacts">
+    <h2 class="visually-hidden">
+      контакты
+    </h2>
+    <div class="page-footer__phone">
+      <a class="page-footer__phone-link" href="tel:89585781048">
+        8(958)578-10-48
+      </a>
+    </div>
+    <div class="page-footer__social">
+      <p class="page-footer__social-title">
+        Пишите нам:
+      </p>
+      <a>вотсап</a>
+      <a>телеграмм</a>
+      <a>вк</a>
+    </div>
+    <div class="page-footer__button">
+      Что нам улучшить ?
+    </div>
+    <div class="page-footer__link">
+      Политика конфидециальности
+    </div>
+  </section>
+</footer>
 </body>
 </html>
 
